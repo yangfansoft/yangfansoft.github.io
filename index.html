@@ -15,7 +15,7 @@
 			<el-header style="text-align: center; font-size: x-large">{{message}}</el-header>
 			<el-main>
 				<div v-for="(data, id) in anvList" :key="id" class="text item">
-					<el-col :span="5" style="margin: 0 10px; text-align: center;">
+					<el-col :span="10" style="margin: 0 10px; text-align: center;">
 						<div @click="gotoPage(data.url)">
 							<el-card>
 								<div style="height: 10vh;margin-top: 5px;">
@@ -41,14 +41,14 @@
                 message: 'Github Navigator',
                 anvList: [
                     {
-                        title: '大厂开源导航',
-						desc:'opensource-lighthouse',
+                        title: 'opensource-lighthouse',
+						desc:'大厂开源项目',
                         url: 'https://github.com/LeslieLeung/opensource-lighthouse'
                     },
 					{
-                        title: '其他',
-                        url: '',
-						desc: ''
+                        title: 'awesome-java',
+						desc: '有趣的JAVA',
+						url: 'https://github.com/akullpp/awesome-java',
                     }
                 ]
             },
